@@ -1,0 +1,93 @@
+
+.experience_content{
+    margin-top: 6rem;
+    background-image: url('/img//experience.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: block;
+    height: 680px;
+    position: relative;
+    .dark_overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        content: "";
+        background-color: rgba(0,0,0, 0.5);
+    }
+    .experience_detail{
+        .exp_left{
+            font-size: $fs-2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 6px;    
+        }
+        .exp_right{
+            padding: 70px 30px;
+            h4{
+                font-size: $fs-1;
+                letter-spacing: 2px;
+            }
+            p{
+                line-height: 30px;
+                font-size: $fs-0;
+            }
+            .experience_progress{
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                background-color: #606060;
+                margin: 50px 0;
+                position: relative;
+                .propress_bar{
+                    font-size: 12px;
+                    padding-left: 10px;
+                    background-color: $color-white-0;
+                    position: absolute;
+                    &.bar-1{
+                    width: 80%;
+                    }    
+                    &.bar-2{
+                    width: 90%;
+                    }
+                    &.bar-3{
+                    width: 75%;
+                    }
+                    span{
+                        min-width: 25px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        background-color: $color-grey-1;
+                        position: absolute;
+                        top: -28px;
+                        right: -5px;
+                        border-radius: 30px;
+                        &::after{
+                            content:"";
+                            border-top: 6px solid $color-grey-1;
+                            border-right: 6px solid $color-trans;
+                            border-left: 6px solid $color-trans;
+                            position: absolute;
+                            bottom: -4px;
+                            left: 28%;
+                            
+                        }
+                    }
+                &::before{
+                    content:"";
+                    width: 0;
+                    height: 20px;
+                    background: linear-gradient(to right, $color-white-0, $color-white-0);
+                    transition: all 0.5s;
+                }   
+                }
+            }
+        }
+      
+    }
+}

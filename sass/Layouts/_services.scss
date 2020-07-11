@@ -1,0 +1,33 @@
+.services{
+    padding: 7rem 0;
+
+    .service_border{
+        border: solid 1px #f2f2f2;
+        padding: 50px;
+        transition: all 0.5s;
+        i{
+            font-size: 35px;
+            padding-bottom: 30px;
+        }
+        h4{
+            color: $color-black-0;
+        }
+        p{
+            color: $color-grey-0;
+        }
+        &:hover{
+            background-color: $color-black-2;
+            i{
+                color: $color-yellow-0;
+            }
+            h4{
+                color: $color-white-0;
+            }
+        }
+    }
+}
+.services_title{
+    p{
+        color: $color-grey-0;
+    }
+}

@@ -1,0 +1,72 @@
+.ourTeam{
+    padding: 100px 0;
+}
+.ourTeam_content{
+    margin-bottom: 100px;
+}
+.ourTeam_main{
+    .team_detail{
+        position: relative;
+        .team_items{
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+            background: rgba(0, 0, 0, 0.692);
+            width: 70%;
+            text-align: right;
+            padding: 10px 15px;
+            h6{
+                color: $color-white-0;
+            }
+            span{
+                @include styleText($color-grey-0, $fs-0, $fw-normal)
+            }
+        }
+        .team_overlay{
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 20px solid rgba(0, 0, 0, .1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all .5s;
+            opacity: 0;
+            .team_overlay__text{
+                padding: 70px 20px 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-100px);
+                transition: all 0.5s;
+                h4{
+                    color: $color-black-4;
+                    letter-spacing: 4px;
+                }
+                p{
+                    color: $color-grey-0;
+                    line-height: 30px;
+                }
+            }
+            .team_overlay__icon{
+                padding-bottom: 50px;
+                width: 100%;
+                // padding-left: 150px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: translateY(50px);
+                transition: all .5s;
+            }
+            &:hover{
+                opacity: 1;
+                .team_overlay__text{
+                    transform: translateY(0);
+                }
+                .team_overlay__icon{
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}

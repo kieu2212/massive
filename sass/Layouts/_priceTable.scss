@@ -1,0 +1,71 @@
+.priceTable{
+    padding: 7rem 0;
+    .priceTable_items{
+        border: solid 1px #e8e8e8;
+        padding: 50px;
+        text-align: center;
+        h3{
+            font-weight: normal;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: $fs-0 +1;
+        }
+        .money{
+            font-size: 42px;
+            margin-bottom: 40px;
+            padding: 25px 0;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+            span{
+                font-size: 16px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        ul{
+            list-style: none;
+            margin-bottom: 40px;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+        button{
+            color: #222;
+            border: 1px solid #e8e8e8;
+            background-color: $color-white-0;
+            padding: 15px 20px;
+            transition: all .1s;
+            &:hover{
+                background-color: $color-black-2;
+                color: $color-white-0;
+            }
+        }
+        &.feature{
+            background-color: $color-black-4;
+            h3{
+                color: $color-yellow-0;
+            }
+            .money{
+                color: $color-white-0;
+                border-top: 1px solid rgba(255, 255, 255, .2);
+                border-bottom: 1px solid rgba(255, 255, 255, .2);
+            }
+            ul{
+                color: #7d7d7d;
+                
+            }
+            button:hover{
+                background-color: $color-yellow-0;
+                border: solid 1px $color-yellow-0;
+            }
+        }
+    }
+}
+.price_title{
+    p{
+        color: #7e7e7e;
+        line-height: 25px;
+    }
+}

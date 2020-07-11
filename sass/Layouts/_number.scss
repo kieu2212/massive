@@ -1,0 +1,30 @@
+.number{
+    background-image: url('/img/7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    background-attachment: fixed;
+    position: relative;
+    .number_items{
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translateY(220%);
+        color: $color-white-0;
+        i{
+            font-size: 40px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        span{
+            font-size: 36px;
+        }
+        p{
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+  
+    }
+
+}

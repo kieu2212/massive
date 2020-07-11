@@ -1,0 +1,31 @@
+.news{
+    color: $color-white-0;
+    line-height: 30px;
+    letter-spacing: 1px;
+    .news_left{
+        background-image: url(/img/p10.jpg);
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+        position: relative;
+        .news_text{
+            position: absolute;
+            top:10%;
+            left: 0;
+            padding: 10%;
+        }
+    }
+    .news_right{
+        background-image: url(/img/p11.jpg);
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+        position: relative;
+        .news_text{
+            position: absolute;
+            top:10%;
+            left: 0;
+            padding: 10%;
+        }
+    }
+}
