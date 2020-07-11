@@ -1084,19 +1084,24 @@
           </div>
         </div>
       </div>
-      <div class="owl-carousel-2 owl-theme">
-        <div class="item"><h4>1</h4></div>
-        <div class="item"><h4>2</h4></div>
-        <div class="item"><h4>3</h4></div>
-        <div class="item"><h4>4</h4></div>
-        <div class="item"><h4>5</h4></div>
-        <div class="item"><h4>6</h4></div>
-        <div class="item"><h4>7</h4></div>
-        <div class="item"><h4>8</h4></div>
-        <div class="item"><h4>9</h4></div>
-        <div class="item"><h4>10</h4></div>
-        <div class="item"><h4>11</h4></div>
-        <div class="item"><h4>12</h4></div>
+      <div class="owl-carousel owl-theme">
+        <div class="item d-flex">
+          <img src="./img/c-1.png">
+          <img src="./img/c-2.png">
+          <img src="./img/c-3.png">
+          <img src="./img/c-4.png">
+          <img src="./img/c-5.png">
+          <img src="./img/c-6.png">
+        </div>
+        <div class="item d-flex">
+          <img src="./img/c-2.png">
+          <img src="./img/c-3.png">
+          <img src="./img/c-4.png">
+          <img src="./img/c-5.png">
+          <img src="./img/c-6.png">
+          <img src="./img/c-7.png">
+        </div>
+      </div>
     </div>
   </section>
   <section class="aboutUs"></section>
@@ -1199,23 +1204,23 @@
         }
       }
     });
-    $('.owl-carousel-2').owlCarousel({
-    rtl:true,
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
+    $('.owl-carousel').owlCarousel({
+      rtl: true,
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
         },
-        600:{
-            items:3
+        600: {
+          items: 1
         },
-        1000:{
-            items:5
+        1000: {
+          items: 1
         }
-    }
-})
+      }
+    })
   </script>
   <!-- MainJS -->
   <script src="./js/main.js"></script>
