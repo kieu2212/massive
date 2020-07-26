@@ -3,6 +3,34 @@
     background-image: url('/img/15.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    // background-attachment: fixed;
+    background-attachment: fixed;
     height: 500px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+        justify-content: space-around;
+        align-items: center !important;
+    .aboutUs_content{
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        
+        .aboutUs_items{
+            color: $color-white-0;
+            i{
+                font-size: 40px;
+                padding-bottom: 20px;
+            }
+            h4{
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+                font-weight: normal;
+            }
+      
+           
+           
+        }
+    }
+    
 }

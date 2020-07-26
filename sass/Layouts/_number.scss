@@ -6,11 +6,10 @@
     height: 500px;
     background-attachment: fixed;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .number_items{
-        position: absolute;
-        left: 20%;
-        top: 50%;
-        transform: translateY(220%);
         color: $color-white-0;
         i{
             font-size: 40px;
@@ -28,3 +27,12 @@
     }
 
 }
+// @media screen and (min-width:950px) and (max-width:991px){
+   
+// }
+// @media screen and (min-width:951px) and (max-width:834px){
+    
+// }
+// @media screen and (max-width:768px){
+   
+// }

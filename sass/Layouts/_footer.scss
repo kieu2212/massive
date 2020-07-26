@@ -38,4 +38,25 @@ footer{
         font-size: 12px;
         text-transform:uppercase;
     }
+   
+}
+
+.backToTop{
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+    opacity: 0;
+    visibility: hidden;
+    i{
+        width: 60px;
+        height: 40px;
+        font-size: 2rem;
+        line-height: 0;
+        text-align: center;
+      }
+  }
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
 }

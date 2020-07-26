@@ -267,6 +267,17 @@ header {
   transition: all 0.5s;
 }
 
+@media screen and (max-width: 993px) {
+  .ourTeam_main .team_detail .team_overlay .team_overlay__text {
+    padding: 70px 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-200px);
+    transition: all 0.5s;
+  }
+}
+
 .ourTeam_main .team_detail .team_overlay .team_overlay__text h4 {
   color: #222;
   letter-spacing: 4px;
@@ -316,6 +327,7 @@ header {
 }
 
 .portforlio_detail .porforlio_items .porforlio_overlay {
+  display: block;
   padding: 50px 0;
   background-color: rgba(255, 255, 255, 0.9);
   border: 20px solid rgba(0, 0, 0, 0.1);
@@ -329,8 +341,21 @@ header {
 
 .portforlio_detail .porforlio_items .porforlio_overlay i {
   font-size: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .portforlio_detail .porforlio_items .porforlio_overlay i {
+    font-size: 20px;
+    padding-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 950px) {
+  .portforlio_detail .porforlio_items .porforlio_overlay i {
+    font-size: 20px;
+  }
 }
 
 .portforlio_detail .porforlio_items .porforlio_overlay p {
@@ -338,6 +363,12 @@ header {
   font-size: 14px;
   text-decoration: none;
   color: #222;
+}
+
+@media screen and (max-width: 768px) {
+  .portforlio_detail .porforlio_items .porforlio_overlay p {
+    line-height: 0px;
+  }
 }
 
 .portforlio_detail .porforlio_items .porforlio_overlay p:hover {
@@ -357,6 +388,49 @@ header {
 
 .portforlio_detail .porforlio_items:hover .porforlio_overlay {
   opacity: 1;
+}
+
+.porforlio_main ul {
+  padding: 50px;
+}
+
+.porforlio_main .tab-content.portforlio-item {
+  padding: 0 25px;
+}
+
+.porforlio_main .nav-tabs {
+  border: none;
+}
+
+.porforlio_main .nav-tabs .nav-link {
+  border: none;
+}
+
+.porforlio_main a {
+  color: #a9a8a8;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 950px) and (max-width: 991px) {
+  .portforlio_detail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 834px) {
+  .portforlio_detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portforlio_detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .services {
@@ -506,6 +580,11 @@ header {
   padding: 100px 0;
 }
 
+.coreFeature_left {
+  display: flex;
+  justify-content: center;
+}
+
 .number {
   background-image: url("/img/7.jpg");
   background-size: cover;
@@ -514,13 +593,12 @@ header {
   height: 500px;
   background-attachment: fixed;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .number .number_items {
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  transform: translateY(220%);
   color: #fff;
 }
 
@@ -619,13 +697,13 @@ header {
   height: 500px;
   position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
 }
 
 .personal .carousel-item {
   text-align: center;
-  position: absolute;
-  left: 0;
-  top: 50%;
 }
 
 .personal .carousel-item .personal_content {
@@ -636,9 +714,7 @@ header {
   width: 100px;
   border-radius: 100%;
   margin: 0 0 40px;
-  position: absolute;
-  left: 47%;
-  bottom: 100%;
+  margin: 0 auto;
 }
 
 .carousel-inner {
@@ -694,6 +770,10 @@ header {
   top: 10%;
   left: 0;
   padding: 10%;
+}
+
+.ourClient {
+  padding: 7rem 0;
 }
 
 .ourClient img {
@@ -822,7 +902,61 @@ header {
   background-image: url("/img/15.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   height: 500px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center !important;
+}
+
+.aboutUs .aboutUs_content .aboutUs_items {
+  color: #fff;
+}
+
+.aboutUs .aboutUs_content .aboutUs_items i {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.aboutUs .aboutUs_content .aboutUs_items h4 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+.sendMessage {
+  padding: 7rem 0;
+}
+
+.sendMessage .sendMessage_content input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.sendMessage .sendMessage_content textarea {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  height: 100px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.sendMessage .sendMessage_content button {
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  height: 40px;
+  border: none;
+  transition: all 0.5s;
+}
+
+.sendMessage .sendMessage_content button:hover {
+  background-color: #d6b161;
 }
 
 footer {
@@ -872,5 +1006,26 @@ footer .copyright-sub-title {
   letter-spacing: 2px;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.backToTop {
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backToTop i {
+  width: 60px;
+  height: 40px;
+  font-size: 2rem;
+  line-height: 0;
+  text-align: center;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
